@@ -1,0 +1,22 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Söguheimar
+email: soguheimar@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Söguheimar gefa ímyndunaraflinu stað í raunveruleikanum. Okkur langar að bjóða börnunum með okkur í heillandi ljóðrænt ferðalag inní ríki ímyndunaraflsins. Stað þar sem við getum á einlægan hátt upplifað náttúruna og reynt á alvöru hugrekki og þor og samhjálp. Þar sem að við getum  upplifað okkur sjálf sem hluta af samfélagi.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://soguheimar.is" # the base hostname & protocol for your site
+
+# Build settings
+highlighter: true
+markdown: kramdown
+permalink: pretty
+
+gems:
+  - octopress-autoprefixer

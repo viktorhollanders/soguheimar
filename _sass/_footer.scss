@@ -1,0 +1,19 @@
+
+.site-footer {
+  background: $background-color;
+  padding: $spacing-unit;
+  text-align: center;
+}
+
+.site-footer__image {
+  margin-bottom: $spacing-unit;
+}
+
+.site-footer__items {
+  list-style: none;
+}
+
+.site-footer__item {
+  font-size: 0.8em;
+  line-height: 1.8em;
+}
