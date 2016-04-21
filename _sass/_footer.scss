@@ -17,3 +17,10 @@
   font-size: 0.8em;
   line-height: 1.8em;
 }
+
+.site-footer__link {
+  color: $main-color;
+}
+.site-footer__link:hover {
+  text-decoration: underline;
+}
