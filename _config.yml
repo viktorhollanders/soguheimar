@@ -14,7 +14,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://soguheimar.is" # the base hostname & protocol for your site
 
 # Build settings
-highlighter: true
+highlighter: rouge
 markdown: kramdown
 permalink: pretty
 
