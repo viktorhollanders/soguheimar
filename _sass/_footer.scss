@@ -1,26 +1,63 @@
-
 .site-footer {
-  background: $background-color;
-  padding: $spacing-unit;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 58px;
+  width: 100vw;
 }
 
-.site-footer__image {
-  margin-bottom: $spacing-unit;
+.site-footer__social-items {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-content: center;
+  margin: 0;
+  padding-bottom: 4em;
+  width: 100vw;
 }
 
-.site-footer__items {
+.site-footer__item,
+.site-footer__contact-item {
   list-style: none;
 }
 
-.site-footer__item {
-  font-size: 0.8em;
-  line-height: 1.8em;
+.site-footer__icon-container {
+  border: 4px solid $blue;
+  border-radius: 100%;
+  height: 80px;
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 104px;
 }
 
-.site-footer__link {
-  color: $main-color;
+.site-footer__icon-fish {
+  margin-top: 12%; //moves the fish icon down 12% to match desing
+  width: 70%;
 }
-.site-footer__link:hover {
-  text-decoration: underline;
+
+.site-footer__email {
+  font-size: 1.25em;
+  font-weight: thin;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4em;
+  text-align: center;
+}
+
+.site-footer__bankInfo {
+  font-size: 1.25em;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.site-footer__copy {
+  font-size: 1em;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 3.125em;
 }

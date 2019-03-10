@@ -5,22 +5,33 @@
 
 
 // Our variables
-$base-font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-$alt-font-family: Georgia, sans-serif;
-$base-font-weight: 400;
-$base-line-height: 1.4;
 
-$spacing-unit: 20px;
+  //typefaces and basic font settings
+  $base__font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  $header-title__font-family: Georgia, sans-serif;
+  $base__line-height: 1.4;
+  $spacing-unit: 20px;
 
-$main-color: #D0021B;
-$text-color: #444;
-$background-color: #eee;
+  //colors
+  $base__background-color: hsl(0, 0% ,100%);
+  $red: hsl(358, 70%, 42%);
+  $red__light: hsl(358, 51%, 53%);
+  $green: hsl(166, 70%, 42%);
+  $yellow: hsl(48, 100%, 50%);
+  $blue: hsl(232, 70%, 42%);
+  $white: hsl(0, 100%, 100%);
 
-$page-max-width: 840px;
+  // colors with gradiants
+
+$page-max-width: 1200px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
   "base",
+  "email",
   "footer",
+  "header",
   "index",
-  "header";
+  "nav",
+  'about',
+  'course';

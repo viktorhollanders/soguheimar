@@ -1,23 +1,50 @@
 
 .index-header {
-  text-align: center;
-  background: url('/images/header-background.jpg');
-  background-size: cover;
-  background-position: center center;
-  color: #FFF;
-  font-family: $alt-font-family;
-  padding: 10vw 5vw;
-  margin-bottom: 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  width: auto;
 }
 
-.index-header__title {
-  font-size: 3em;
-  margin-bottom: 0;
+.index-bg {
+  background: url('/images/header-home.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.sumarbudir-bg {
+  background: url('/images/header-sumarbudir.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+.sirkus-bg {
+  background: url('/images/header-sirkus.jpg');
+  background-size: cover;
+  background-position: left center;
+}
+
+.leikdagur-bg {
+  background: url('/images/header-leikdagur.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+.umokkur-bg {
+  background: url('/images/header-about.jpg');
+  background-size: cover;
+  background-position: center center;
 }
 
 .index-header__subtitle {
-  font-size: 1.5em;
-  margin-top: 0;
+  font-size: 41px;
+  margin-bottom: 2em;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+  width: 92%;
 }
 
 .index-header__image {
@@ -27,61 +54,162 @@
   margin-bottom: -17vw;
 }
 
-
 .index-content {
-  max-width: $page-max-width;
-  padding: 5vw;
+  padding: 5vh 0vw;
   margin: 0 auto;
+  max-width: $page-max-width;
+  font-size: 18px;
 }
 
 .index-content__intro-text {
-  font-size: 1.2em;
+  padding: 0 5vw;
+  max-width: 840px;
+  margin: 0 auto;
+  font-size: 18px;
 }
 
-
-.index-article {
-  margin: 5vw 0;
+.index-content__caption-text {
+  color: $yellow;
+  font-size: 30px;
+  font-weight: 700;
   text-align: center;
+  padding: 5vw 2vw;
+  margin: 20px 0;
 }
 
-.index-article__header {
-  font-size: 2.5em;
+.index-content__course-container {
+  margin: 72px 0;
+  overflow: hidden;
 }
 
-.index-article__image {
-  width: 40vw;
-  max-width: 270px;
-  margin: $spacing-unit;
-  border-radius: 1000px;
-}
-
-.index-article__text {
-  text-align: left;
-}
-
-.index-article__button {
-  display: inline-block;
-  padding: 0.5em 1em;
-  margin: $spacing-unit 0;
-
-  background: $main-color;
-  border-radius: 4px;
-  color: #FFF;
-  font-size: 0.9em;
-  font-weight: 600;
+.index-contnet__courses-header {
+  font-size: 40px;
+  text-align: center;
+  color: $yellow;
   text-transform: uppercase;
 }
 
 
-@media screen and (min-width: 600px) {
-  .index-article {
-    text-align: left;
+/* mobile course */
+
+.index-content__courses__arrow {
+  position: relative;
+  top: 400px;
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  z-index: 1;
+}
+
+.courses__arrow-next-tag, .courses__arrow-prev-tag {
+  padding: 6px;
+}
+
+.index-content__course-wrapper-mobile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.index-content__course-wrapper-mobile.unwrap{
+	flex-wrap: nowrap;
+}
+
+.index-content__course-wrapper {
+  display: none;
+}
+
+.index-course {
+  width: 270px;
+  height: auto;
+  margin: 20px 10px;
+  padding: 30px 0;
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: 0px 2px 40px rgb(242, 242, 242);
+}
+
+.index-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.index-course__title {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.index-course__image {
+  border-radius: 100%;
+  height: 165px;
+  width: 165px;
+  margin: 25px 0;
+}
+
+.index-course__description {
+  width: 245px;
+}
+
+.index-course__button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.index-course__button {
+  font-size: 16px;
+  text-align: center;
+  color: $red;
+  background-color: $white;
+  border: 2px solid $blue;
+  border-radius: 100px;
+  padding: 12px 20px;
+  margin-top: 30px;
+}
+
+
+@media screen and (min-width: 700px) {
+  .index-content__intro-text,
+  .index-content__caption-text {
+    padding: 5vh 14vw 0;
   }
 
-  .index-article__image--right {
-    float: right;
+  .courses__arrow-next-tag, .courses__arrow-prev-tag {
+    padding: 6px 70px;
   }
-  .index-article__image--left {
-    float: left;
+
+  .index-course {
+    padding: 31px;
   }
+}
+
+@media screen and (min-width: 1000px) {
+  .index-header__subtitle {
+    font-size: 80px;
+    margin-bottom: 113px;
+  }
+
+
+  .index-content__intro-text {
+    font-size: 25px;
+  }
+
+  .index-content__caption-text {
+    font-size: 30px;
+  }
+
+  .index-content__course-wrapper-mobile,
+  .index-content__courses__arrow {
+    display: none;
+  }
+
+  .index-content__course-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
 }

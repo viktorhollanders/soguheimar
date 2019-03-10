@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="41.500020000000404" width="19">
+  <defs>
+    <path id="path-0" opacity="1" fill-rule="evenodd" d="M0,41.500020000000404 C0,41.500020000000404 0.07643953472325474,34.15377485939747 0.20987135290507322,21.330268679397353 C0.3433031710868917,8.506762499397228 0.4318181818181818,0 0.4318181818181818,0 L19,21.00001012048213 L0,41.500020000000404Z"/>
+  </defs>
+  <g transform="translate(9.5, 20.750010000000202) scale(-1, 1) translate(-9.5, -20.750010000000202)" opacity="1">
+    <use xlink:href="#path-0" fill="rgb(182,32,73)" fill-opacity="1"/>
+  </g>
+</svg>
