@@ -121,7 +121,7 @@
 
 .index-course {
   width: 270px;
-  height: 250px;
+  height: auto;
   margin: 20px 10px;
   padding: 30px 0;
   background-color: $white;
@@ -151,6 +151,7 @@
 
 .index-course__description {
   width: 245px;
+  height: 250px;
 }
 
 .index-course__button-container {
