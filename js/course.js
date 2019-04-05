@@ -1,4 +1,3 @@
-
 let courseNumber = 0;
 
 /*const courses = document.querySelector(".course")
@@ -16,28 +15,30 @@ const prevTag = document.querySelector("img.prev-tag");
 
 const courses = [
   {
-    title: 'Sumarbúðir',
-    image: 'images/sumarbudir.jpg',
-    content: "Fyrir börn á aldrinum 8 - 13 ára. Komdu inn í heim sagna og ævintýra og upplifðu söguna á eigin skinni. Tjaldaðu með okkur í fallega græna dalnum okkar í heila viku og lifðu og leiktu þér undir þaki heimsins, kveiktu varðeld, eldaðu mat og taktu þátt í frábæru ævintýri.",
+    title: "Sumarbúðir",
+    image: "images/sumarbudir.jpg",
+    content:
+      "Fyrir börn á aldrinum 8 - 13 ára. Komdu inn í heim sagna og ævintýra og upplifðu söguna á eigin skinni. Tjaldaðu með okkur í fallega græna dalnum okkar í heila viku og lifðu og leiktu þér undir þaki heimsins, kveiktu varðeld, eldaðu mat og taktu þátt í frábæru ævintýri.",
     linkMore: "sumarbudir",
     linkDirect: "#"
   },
   {
     title: "Sirkus",
     image: "images/sirkus.jpg",
-    content: "Lærðu að leika sirkuslistir í fellegu umhverfi Lækjarbotna undir berum himmni. Á námskeiðinu verður farið í undirstöðuatriðinn í sirkus. Komdu með og upplifðu að takast á við hið ótrúlega á fallegum stað.",
+    content:
+      "Lærðu að leika sirkuslistir í fellegu umhverfi Lækjarbotna undir berum himmni. Á námskeiðinu verður farið í undirstöðuatriðinn í sirkus. Komdu með og upplifðu að takast á við hið ótrúlega á fallegum stað.",
     linkMore: "sirkus",
     linkDirect: "#"
   },
   {
     title: "Leikdagar",
     image: "images/leikdagur.jpg",
-    content: "Leikur fyrir alla á aldrinum 1 - 100 ára.  Þetta er tækifæri til að leika sér saman bæði fullorðnir og börn, upplifa einstaka stemmingu þar sem allir koma saman að byggja og leika sér úti í grasgrænni náttúrunni.",
+    content:
+      "Leikur fyrir alla á aldrinum 1 - 100 ára.  Þetta er tækifæri til að leika sér saman bæði fullorðnir og börn, upplifa einstaka stemmingu þar sem allir koma saman að byggja og leika sér úti í grasgrænni náttúrunni.",
     linkMore: "/leikdagur",
     linkDirect: "#"
   }
-]
-
+];
 
 /*const newNext = function () {
   const currentCourse = currentCourse + 1
@@ -51,16 +52,16 @@ const courses = [
 }
 */
 
-const next = function () {
+const next = function() {
   courseNumber = courseNumber + 1;
 
   if (courseNumber > courses.length - 1) {
     courseNumber = 0;
   }
   updateCourse();
-}
+};
 
-const previous = function () {
+const previous = function() {
   courseNumber = courseNumber - 1;
 
   if (courseNumber < 0) {
@@ -68,22 +69,22 @@ const previous = function () {
   }
 
   updateCourse();
-}
+};
 
-const updateCourse = function () {
+const updateCourse = function() {
   courseTitle.innerHTML = courses[courseNumber].title;
   courseImage.setAttribute("src", courses[courseNumber].image);
   courseDescription.innerHTML = courses[courseNumber].content;
   linkOne.setAttribute("href", courses[courseNumber].linkMore);
   linkTwo.setAttribute("href", courses[courseNumber].linkDirect);
-}
+};
 
 // when I click the nextTag slide the canvas right
-nextTag.addEventListener("click", function () {
+nextTag.addEventListener("click", function() {
   next();
 });
 
 // when I click the prevTag slide the canvas left
-prevTag.addEventListener("click", function () {
+prevTag.addEventListener("click", function() {
   previous();
-})
+});

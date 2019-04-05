@@ -15,7 +15,6 @@
   //colors
   $base__background-color: hsl(0, 0% ,100%);
   $red: hsl(358, 70%, 42%);
-  $red__light: hsl(358, 51%, 53%);
   $green: hsl(166, 70%, 42%);
   $yellow: hsl(48, 100%, 50%);
   $blue: hsl(232, 70%, 42%);
@@ -34,4 +33,5 @@ $page-max-width: 1200px;
   "index",
   "nav",
   'about',
-  'course';
+  'course',
+  "faq";
