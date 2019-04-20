@@ -1,5 +1,4 @@
-
-.index-header {
+.index-hero {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,50 +7,59 @@
   width: auto;
 }
 
+//background images
+
 .index-bg {
-  background: url('/images/header-home.jpg');
-  background-size: cover;
+  background: url("/images/hero-heim-mobile.jpg");
   background-position: center center;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
+  background-size: cover;
 }
 
 .sumarbudir-bg {
-  background: url('/images/header-sumarbudir.jpg');
+  background: url("/images/hero-sumarbudir-tablet.jpg");
+  background-position: center center;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
   background-size: cover;
-  background-position: top center;
 }
 
 .sirkus-bg {
-  background: url('/images/header-sirkus.jpg');
+  background: url("/images/hero-sirkus-mobile.jpg");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
   background-size: cover;
-  background-position: left center;
+  background-position: right center;
 }
 
 .leikdagur-bg {
-  background: url('/images/header-leikdagur.jpg');
+  background: url("/images/hero-leikdagur-mobile.jpg");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
   background-size: cover;
   background-position: top center;
 }
 
-.umokkur-bg {
-  background: url('/images/header-about.jpg');
+.umOkkur-bg {
+  background: url("/images/hero-umOkkur-mobile.jpg");
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto;
   background-size: cover;
   background-position: center center;
 }
 
-.index-header__subtitle {
+.index-hero__subtitle {
   font-size: 41px;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   font-weight: 400;
   color: $white;
   text-align: center;
-  width: 92%;
-}
-
-.index-header__image {
-  width: 20vw;
-  margin: 3vw;
-  max-width: 200px;
-  margin-bottom: -17vw;
 }
 
 .index-content {
@@ -89,7 +97,6 @@
   text-transform: uppercase;
 }
 
-
 /* mobile course */
 
 .index-content__courses__arrow {
@@ -101,18 +108,19 @@
   z-index: 1;
 }
 
-.courses__arrow-next-tag, .courses__arrow-prev-tag {
+.courses__arrow-next-tag,
+.courses__arrow-prev-tag {
   padding: 6px;
 }
 
 .index-content__course-wrapper-mobile {
-  position: relative;
+  position: static;
   display: flex;
   justify-content: center;
 }
 
-.index-content__course-wrapper-mobile.unwrap{
-	flex-wrap: nowrap;
+.index-content__course-wrapper-mobile.unwrap {
+  flex-wrap: nowrap;
 }
 
 .index-content__course-wrapper {
@@ -178,14 +186,52 @@
   box-shadow: 0px 2px 40px rgb(242, 242, 242);
 }
 
-
 @media screen and (min-width: 700px) {
+  .index-hero {
+    height: 70vh;
+  }
+
+  .index-bg {
+    background: url("/images/hero-heim-desktop.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .sumarbudir-bg {
+    background: url("/images/hero-sumarbudir-desktop.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .sirkus-bg {
+    background: url("/images/hero-sirkus-dektop.jpg");
+    background-position: left center;
+    background-size: cover;
+  }
+
+  .leikdagur-bg {
+    background: url("/images/hero-leikdagur-desktop.jpg");
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .umOkkur-bg {
+    background: url("/images/hero-umOkkur-desktop.jpg");
+    background-position: center;
+  }
+
+  .index-hero__subtitle {
+    margin-bottom: 3.5em;
+  }
+
   .index-content__intro-text,
   .index-content__caption-text {
     padding: 5vh 14vw 0;
   }
 
-  .courses__arrow-next-tag, .courses__arrow-prev-tag {
+  .courses__arrow-next-tag,
+  .courses__arrow-prev-tag {
     padding: 6px 70px;
   }
 
@@ -194,12 +240,15 @@
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .index-header__subtitle {
-    font-size: 80px;
-    margin-bottom: 113px;
+@media screen and (min-width: 1200px) {
+  .index-hero {
+    height: 90vh;
   }
 
+  .index-hero__subtitle {
+    font-size: 80px;
+    margin-top: 3.5em;
+  }
 
   .index-content__intro-text {
     font-size: 25px;
@@ -218,5 +267,4 @@
     display: flex;
     justify-content: center;
   }
-
 }
