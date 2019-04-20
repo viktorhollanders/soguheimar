@@ -218,7 +218,8 @@
 
   .umOkkur-bg {
     background: url("/images/hero-umOkkur-desktop.jpg");
-    background-position: center;
+    background-position: center center;
+    background-size: cover;
   }
 
   .index-hero__subtitle {
