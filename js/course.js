@@ -16,7 +16,7 @@ const prevTag = document.querySelector("img.prev-tag");
 const courses = [
   {
     title: "Sumarbúðir",
-    image: "images/sumarbudir.jpg",
+    image: "/images/sumarbudir.jpg",
     content:
       "Fyrir börn á aldrinum 8 - 13 ára. Komdu inn í heim sagna og ævintýra og upplifðu söguna á eigin skinni. Tjaldaðu með okkur í fallega græna dalnum okkar í heila viku og lifðu og leiktu þér undir þaki heimsins, kveiktu varðeld, eldaðu mat og taktu þátt í frábæru ævintýri.",
     linkMore: "sumarbudir",
@@ -24,7 +24,7 @@ const courses = [
   },
   {
     title: "Sirkus",
-    image: "images/sirkus.jpg",
+    image: "/images/sirkus.jpg",
     content:
       "Lærðu að leika sirkuslistir í fellegu umhverfi Lækjarbotna undir berum himmni. Á námskeiðinu verður farið í undirstöðuatriðinn í sirkus. Komdu með og upplifðu að takast á við hið ótrúlega á fallegum stað.",
     linkMore: "sirkus",
@@ -32,7 +32,7 @@ const courses = [
   },
   {
     title: "Leikdagar",
-    image: "images/leikdagur.jpg",
+    image: "/images/leikdagur.jpg",
     content:
       "Leikur fyrir alla á aldrinum 1 - 100 ára.  Þetta er tækifæri til að leika sér saman bæði fullorðnir og börn, upplifa einstaka stemmingu þar sem allir koma saman að byggja og leika sér úti í grasgrænni náttúrunni.",
     linkMore: "/leikdagur",
