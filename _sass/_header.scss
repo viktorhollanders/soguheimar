@@ -3,9 +3,11 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
-  background: transparent;
-  padding: 5vh 0vw 0vw;
+
   width: 100vw;
+
+  padding: 5vh 0vw 0vw;
+  background: transparent;
 }
 
 .site-header__logo-image {
@@ -60,6 +62,9 @@
 }
 
 @media screen and (min-width: 600px) {
+  .site-header {
+    margin: 40px 0 0 0;
+  }
   .site-header__navigation {
     display: flex;
   }
