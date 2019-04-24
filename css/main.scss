@@ -1,37 +1,30 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
+@charset "utf-8";
 
 // Our variables
 
-  //typefaces and basic font settings
-  $base__font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-  $header-title__font-family: Georgia, sans-serif;
-  $base__line-height: 1.4;
-  $spacing-unit: 20px;
+//typefaces and basic font settings
+$base__font-family: system, -apple-system, ".SFNSText-Regular", "San Francisco",
+  "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+$header-title__font-family: Georgia, sans-serif;
+$base__line-height: 1.4;
+$spacing-unit: 20px;
 
-  //colors
-  $base__background-color: hsl(0, 0% ,100%);
-  $red: hsl(358, 70%, 42%);
-  $green: hsl(166, 70%, 42%);
-  $yellow: hsl(48, 100%, 50%);
-  $blue: hsl(232, 70%, 42%);
-  $white: hsl(0, 100%, 100%);
+//colors
+$base__background-color: hsl(0, 0%, 100%);
+$red: hsl(358, 70%, 42%);
+$green: hsl(166, 70%, 42%);
+$yellow: hsl(48, 100%, 50%);
+$blue: hsl(232, 70%, 42%);
+$white: hsl(0, 100%, 100%);
 
-  // colors with gradiants
+// colors with gradiants
 
 $page-max-width: 1200px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-  "base",
-  "email",
-  "footer",
-  "header",
-  "index",
-  "nav",
-  'about',
-  'course',
+@import "base", "email", "footer", "header", "index", "nav", "about", "course",
   "faq";

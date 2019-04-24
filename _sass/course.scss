@@ -8,7 +8,7 @@
 }
 
 .index-content__courses__title {
-  font-size:  2.5em;
+  font-size: 2.5em;
   text-align: center;
   color: $yellow;
   text-transform: uppercase;
@@ -59,15 +59,17 @@
   color: $blue;
 }
 
-.course::after, .course::before {
-  content: '';
+.course::after,
+.course::before {
+  content: "";
   position: absolute;
 }
 
-.course.accept:active, .course.accept:hover {
-  box-shadow: 0 12px 7px -7px rgba(0, 0, 0, .1);
+.course.accept:active,
+.course.accept:hover {
+  box-shadow: 0 12px 7px -7px rgba(0, 0, 0, 0.1);
   transform: translate(0, -5px);
-  transition: box-shadow .2s, transform .2s, background-color .2s
+  transition: box-shadow 0.2s, transform 0.2s, background-color 0.2s;
 }
 
 .course::before {
@@ -92,12 +94,15 @@
   background-color: hsla(166, 70%, 42%, 0.9);
 }
 
-.course::after, .course::before {
+.course::after,
+.course::before {
   opacity: 0;
-  transition: opacity .2s ease
+  transition: opacity 0.2s ease;
 }
 
-.course.is-active::after, .course.is-active::before, .course:hover::after,
+.course.is-active::after,
+.course.is-active::before,
+.course:hover::after,
 .course:hover::before {
   opacity: 1;
 }
@@ -110,4 +115,31 @@
   .index-content__courses__sub-title {
     padding: 0 30vw;
   }
+}
+
+// unavialable rule
+
+.unavailable p {
+  color: white;
+}
+
+.unavailable div {
+  background-color: gray;
+  color: gray;
+}
+
+.unavailable p.course-info {
+  color: gray;
+}
+
+.unavailable:hover {
+  box-shadow: none;
+  transform: none;
+  transition: none;
+}
+
+.unavailable::after,
+.unavailable::before {
+  content: "";
+  display: none;
 }
