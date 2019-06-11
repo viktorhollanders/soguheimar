@@ -11,8 +11,14 @@
 .email-signup-title {
   color: $white;
   text-align: center;
-  font-size:  1.8em;
+  font-size: 1.8em;
   font-weight: 400;
+  width: 90%;
+}
+
+.email-signup-lable {
+  display: flex;
+  justify-content: center;
   width: 90%;
 }
 
@@ -25,7 +31,8 @@
 }
 
 /* removes imput higlight*/
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
 }
 
@@ -38,7 +45,7 @@ input:focus, textarea:focus {
   color: $red;
   font-size: 1em;
   -moz-appearance: none;
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
 }
 
 .email-signup-button:hover {
@@ -47,19 +54,20 @@ input:focus, textarea:focus {
 }
 
 @media screen and (min-width: 500px) {
-
   .email-signup-title {
     width: 60%;
+  }
+
+  .email-signup-lable {
+    width: 80%;
   }
 
   .email-signup-input {
     width: 80%;
   }
-
 }
 
 @media screen and (min-width: 1000px) {
-
   .email-signup-title {
     width: 30%;
   }
@@ -67,5 +75,4 @@ input:focus, textarea:focus {
   .email-signup-input {
     width: 50%;
   }
-
 }
