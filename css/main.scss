@@ -26,5 +26,4 @@ $white: hsl(0, 100%, 100%);
 $page-max-width: 1200px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import "base", "email", "footer", "header", "index", "nav", "about", "course",
-  "faq";
+@import "base", "email", "footer", "header", "index", "about", "course", "faq";

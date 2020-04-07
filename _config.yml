@@ -18,9 +18,6 @@ highlighter: rouge
 markdown: kramdown
 permalink: pretty
 
-plugins:
-  - octopress-autoprefixer
-
 exclude:
   - Gemfile
   - Gemfile.lock
