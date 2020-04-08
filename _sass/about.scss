@@ -78,7 +78,7 @@
   margin: 0 0 8px 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
   .staff {
     padding: 0 20vw;
   }
@@ -95,6 +95,7 @@
 
   .index-content__staff__list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
   }
 }
