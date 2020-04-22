@@ -25,8 +25,12 @@
 
 .index-content__courses {
   display: grid;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+}
+
+.courses-anchor {
+  margin-bottom: 45px;
+  justify-self: center;
 }
 
 .course {
@@ -107,11 +111,17 @@
   opacity: 1;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
   .index-content__courses {
-    padding: 0 200px;
+    grid-template-columns: 1fr 1fr;
   }
 
+  .courses-anchor {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
   .index-content__courses__sub-title {
     padding: 0 30vw;
   }
