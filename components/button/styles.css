@@ -1,0 +1,12 @@
+.btn {
+  padding: 20px;
+}
+
+.btn-filled {
+  background-color: blue;
+}
+
+.btn-outline {
+  background: none;
+  border: solid 1px black;
+}
