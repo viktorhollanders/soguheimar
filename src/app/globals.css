@@ -1,0 +1,50 @@
+/* global.css */
+@import "normalize.css";
+
+/* set up font familys */
+@font-face {
+    font-family: "inter";
+    src: url("/fonts/InterVariable.woff2") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "inter";
+    src: url("/fonts/InterVariable-Italic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "lora";
+    src: url("../../public/fonts/Lora-VariableItalic.woff2") format("woff2");
+    font-style: italic;
+    font-weight: normal;
+}
+
+/* root styles */
+:root {
+    /* fonts */
+    --primary-font: "lora", sans-serif;
+    --secondary-font: "inter", var(--primary-font);
+
+    /* colors */
+    --primary-color: #fec702;
+    --secondary-color: #ffd53e;
+    --background: var(--white) --black: #000;
+    --gray-800: #5d5d5d;
+    --gray-500: #717171;
+    --gray-100: #c6c6c6;
+    --gray-10: #fafafa;
+    --white: #fff;
+
+    /* base font size */
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--black);
+    font-size: 1.6rem;
+}
