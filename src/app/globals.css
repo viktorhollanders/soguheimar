@@ -32,7 +32,8 @@
     /* colors */
     --primary-color: #fec702;
     --secondary-color: #ffd53e;
-    --background: var(--white) --black: #000;
+    --background: #fcfcfc;
+    --black: #000;
     --gray-800: #5d5d5d;
     --gray-500: #717171;
     --gray-100: #c6c6c6;
@@ -47,4 +48,5 @@ body {
     background-color: var(--background);
     color: var(--black);
     font-size: 1.6rem;
+    line-height: 24px;
 }
