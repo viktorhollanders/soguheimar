@@ -31,9 +31,6 @@
     text-decoration: underline;
 }
 
-.contatLink {
-}
-
 .contactItem {
     display: flex;
     flex-direction: row;

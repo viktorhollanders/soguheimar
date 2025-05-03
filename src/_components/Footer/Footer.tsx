@@ -6,13 +6,13 @@ export default function Footer() {
     const socialAccounts = [
         {
             name: "Facebook",
-            url: "/icons/instagram.svg",
-            link: "#",
+            url: "/icons/facebook.svg",
+            link: "https://www.facebook.com/profile.php?id=100069326576677",
         },
         {
             name: "Instagram",
-            url: "/icons/facebook.svg",
-            link: "#",
+            url: "/icons/instagram.svg",
+            link: "https://www.instagram.com/soguheimar/",
         },
     ];
 
