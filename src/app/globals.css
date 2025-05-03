@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: "lora";
-    src: url("../../public/fonts/Lora-VariableItalic.woff2") format("woff2");
-    font-style: italic;
+    src: url("/fonts/Lora-Variable.woff2") format("woff2");
+    font-style: normal;
     font-weight: normal;
 }
 
@@ -32,7 +32,7 @@
     /* colors */
     --primary-color: #fec702;
     --secondary-color: #ffd53e;
-    --background: #fcfcfc;
+    --background: #fff;
     --black: #000;
     --gray-800: #5d5d5d;
     --gray-500: #717171;

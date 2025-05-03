@@ -1,0 +1,33 @@
+.footer {
+    background-color: var(--gray-10);
+    padding: 34px 10%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoHeader {
+    color: var(--primary-color);
+}
+
+.address {
+    max-width: 150px;
+    margin: 0;
+}
+
+.mapLink {
+    color: var(--black);
+    margin-top: 8px;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 55px 0 24px 0;
+}
