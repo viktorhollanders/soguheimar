@@ -21,9 +21,32 @@
     margin: 0;
 }
 
-.mapLink {
+.link {
     color: var(--black);
+    text-decoration: none;
+}
+
+#mapLink {
     margin-top: 8px;
+    text-decoration: underline;
+}
+
+.contatLink {
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.contactLable {
+    margin: 0;
+}
+
+.seperator {
+    gap: 2px;
 }
 
 .copyright {
