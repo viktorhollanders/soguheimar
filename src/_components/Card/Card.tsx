@@ -6,9 +6,9 @@ type CardProps = {
     iconUrl: string;
     alt_description: string;
     price: number;
-    week_nr: number;
-    date_from: string;
-    date_to: string;
+    weekNr: number;
+    dateFrom: string;
+    dateTo: string;
     link: string;
 };
 
@@ -16,9 +16,9 @@ export default function Card({
     iconUrl,
     alt_description,
     price,
-    week_nr,
-    date_from,
-    date_to,
+    weekNr,
+    dateFrom,
+    dateTo,
     link,
 }: CardProps) {
     const formatedPrice = price.toLocaleString("de-DE");
@@ -34,9 +34,9 @@ export default function Card({
                     height={40}
                 />
                 <div className={styles.info}>
-                    <p className={styles.weekInfo}>Week {`${week_nr}`}</p>
+                    <p className={styles.weekInfo}>Week {`${weekNr}`}</p>
                     <p className={styles.date_info}>
-                        {`${date_from}`} — {`${date_to}`}
+                        {`${dateFrom}`} — {`${dateTo}`}
                     </p>
                 </div>
             </div>
