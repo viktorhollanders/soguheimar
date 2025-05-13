@@ -2,14 +2,20 @@
     font-size: 1.6rem;
     font-weight: 600;
     background-color: var(--primary-color);
+    text-decoration: none;
     color: var(--black);
-
-    padding: 0 24px;
-    border-radius: 12px;
+    border-radius: 10px;
     border: none;
+    padding: 12px 24px;
 
     display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+.large {
+    padding: 18px 0;
+    width: 100%;
 }
 
 .button:hover {

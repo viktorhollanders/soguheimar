@@ -4,18 +4,26 @@ type ButtonProps = {
     text: string;
     url?: string;
     type?: "button" | "submit" | "reset";
+    variant?: "default" | "large";
 };
 
-export default function Button({ text, url, type = "button" }: ButtonProps) {
+export default function Button({
+    text,
+    url,
+    type = "button",
+    variant = "default",
+}: ButtonProps) {
+    const buttonClass = `${styles.button} ${variant !== "default" ? styles[variant] : ""}`;
+
     if (url) {
         return (
-            <a href={url} className={styles.button}>
+            <a href={url} className={buttonClass}>
                 {text}
             </a>
         );
     } else {
         return (
-            <button type={type} className={styles.button}>
+            <button type={type} className={buttonClass}>
                 {text}
             </button>
         );
