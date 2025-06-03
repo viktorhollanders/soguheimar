@@ -1,6 +1,10 @@
 /* global.css */
 @import "normalize.css";
 
+* {
+    box-sizing: border-box;
+}
+
 /* set up font familys */
 @font-face {
     font-family: "inter";

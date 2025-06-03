@@ -1,9 +1,15 @@
 "use client";
 
-// import { useState } from "react";s
-import Form from "next/form";
-import Button from "../Button/Button";
 import styles from "./styles.module.css";
+import { subscribe } from "@/src/app/actions/subscribe";
+
+function SubmitButton() {
+    return (
+        <button type="submit" className={styles.button}>
+            Skrá mig!
+        </button>
+    );
+}
 
 export default function MailingList() {
     return (
@@ -14,14 +20,15 @@ export default function MailingList() {
                     Skráðu þig á póstlista fyrir ævintýri og leiki fyrir allan
                     aldur frá 0 – 100 ára
                 </p>
-                <Form className={styles.form} action="/submit">
+                <form className={styles.form} action={subscribe}>
                     <input
+                        type="email"
+                        name="email"
                         className={styles.input}
-                        name="/query"
                         placeholder="Sláðu inn netfangið þitt"
                     />
-                    <Button text="Submit" variant="large" />
-                </Form>
+                    <SubmitButton />
+                </form>
             </div>
         </section>
     );

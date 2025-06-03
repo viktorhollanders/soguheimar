@@ -33,14 +33,25 @@
 }
 
 .form {
-    max-width: 365px;
+    width: 365px;
 }
 
 .input {
-    font-size: 1.6rem;
-    padding: 18px 16px;
-    border: 1px solid var(--gray-100);
-    border-radius: 10px;
+    width: 100%;
     margin-bottom: 24px;
-    width: 365px;
+    padding: 18px 16px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-100);
+}
+
+.button {
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    border: none;
+
+    padding: 18px 0;
+
+    width: 100%;
 }
