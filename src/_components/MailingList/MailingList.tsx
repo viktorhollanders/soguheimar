@@ -1,35 +1,38 @@
-"use client";
+'use client';
 
-import styles from "./styles.module.css";
-import { subscribe } from "@/src/app/actions/subscribe";
+import { useActionState } from 'react';
+import styles from './styles.module.css';
+import { subscribe } from '@/src/app/actions';
 
-function SubmitButton() {
-    return (
-        <button type="submit" className={styles.button}>
-            Skrá mig!
-        </button>
-    );
-}
+const initialState = {
+  message: ' ',
+  type: 'normal',
+};
 
 export default function MailingList() {
-    return (
-        <section className={styles.section}>
-            <h1 className={styles.mainHeading}>Póstlisti</h1>
-            <div className={styles.contentContainer}>
-                <p className={styles.callOut}>
-                    Skráðu þig á póstlista fyrir ævintýri og leiki fyrir allan
-                    aldur frá 0 – 100 ára
-                </p>
-                <form className={styles.form} action={subscribe}>
-                    <input
-                        type="email"
-                        name="email"
-                        className={styles.input}
-                        placeholder="Sláðu inn netfangið þitt"
-                    />
-                    <SubmitButton />
-                </form>
-            </div>
-        </section>
-    );
+  const [state, formAction, pending] = useActionState(subscribe, initialState);
+
+  return (
+    <section className={styles.section}>
+      <h1 className={styles.mainHeading}>Póstlisti</h1>
+      <div className={styles.contentContainer}>
+        <p className={styles.callOut}>
+          Skráðu þig á póstlista fyrir ævintýri og leiki fyrir allan aldur frá 0 - 100 ára
+        </p>
+        <form className={styles.form} action={formAction}>
+          <p className={`${styles.message} ${styles[`message-${state.type}`]}`}>{state.message}</p>
+          <input
+            type="text"
+            name="email"
+            className={styles.input}
+            placeholder="Sláðu inn netfangið þitt"
+          />
+
+          <button type="submit" className={styles.button} disabled={pending}>
+            Skrá mig!
+          </button>
+        </form>
+      </div>
+    </section>
+  );
 }

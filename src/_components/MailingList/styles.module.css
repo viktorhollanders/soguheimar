@@ -1,57 +1,70 @@
 .section {
-    margin-top: 90px;
+  margin-top: 90px;
 
-    display: grid;
-    grid-template-columns: auto 700px auto;
-    grid-template-rows: auto auto;
+  display: grid;
+  grid-template-columns: auto 700px auto;
+  grid-template-rows: auto auto;
 }
 
 .mainHeading {
-    font-size: 3.2rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 42px;
+  font-size: 3.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 42px;
 
-    grid-area: 1 / 2 /2 /3;
-    align-self: center;
+  grid-area: 1 / 2 /2 /3;
+  align-self: center;
 }
 
 .contentContainer {
-    grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 3 / 3;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .callOut {
-    font-size: 2.4rem;
-    font-weight: 500;
-    line-height: 4.6rem;
-    max-width: 300px;
+  font-size: 2.4rem;
+  line-height: 4.6rem;
+  max-width: 300px;
 }
 
 .form {
-    width: 365px;
+  width: 365px;
 }
 
 .input {
-    width: 100%;
-    margin-bottom: 24px;
-    padding: 18px 16px;
-    border-radius: 10px;
-    border: 1px solid var(--gray-100);
+  width: 100%;
+  padding: 18px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--gray-100);
+}
+
+.message {
+  min-height: 1.4em;
+  font-size: 1.4rem;
+  margin: 10px 0 0 0;
+}
+
+.message-error {
+  color: var(--error);
+}
+
+.message-success {
+  color: var(--success);
 }
 
 .button {
-    font-size: 1.6rem;
-    font-weight: 600;
-    background-color: var(--primary-color);
-    border-radius: 10px;
-    border: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  border: none;
 
-    padding: 18px 0;
+  padding: 18px 0;
+  margin-top: 24px;
 
-    width: 100%;
+  width: 100%;
 }

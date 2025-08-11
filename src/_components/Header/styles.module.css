@@ -1,38 +1,13 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 48px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  position: relative;
 }
 
 .logo {
-    position: absolute;
-    left: 48px;
+  position: absolute;
+  left: 48px;
 }
 
-.nav_wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-}
-
-.indicator {
-    color: var(--primary-color);
-    margin: 0 0 0.8rem 0;
-    font-size: 2rem;
-    position: absolute;
-    left: 0;
-}
-
-.nav {
-    display: flex;
-    gap: 50%;
-    padding-top: 3rem;
-}
-
-.link {
-    color: #000;
-    text-decoration: none;
-}

@@ -1,0 +1,40 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.indicator {
+  color: var(--primary-color);
+  font-size: 2rem;
+
+  position: relative;
+  margin: 0;
+  margin-bottom: 4px;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  list-style-type: none;
+  margin-right: 100px;
+}
+
+.link {
+  color: var(--gray-100);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--black);
+}
+
+.active {
+  color: var(--black);
+  font-weight: 500;
+}
