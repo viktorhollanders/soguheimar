@@ -38,7 +38,13 @@ export default function NavBar() {
         navRef.current = node;
       }}
     >
-      <h3 className={styles.indicator} style={{ left: `${indicatorPosition}px` }}>
+      <h3
+        className={styles.indicator}
+        style={{
+          transform: `translateX(${indicatorPosition}px)`,
+          transition: `transform 300ms ease-in-out`,
+        }}
+      >
         Söguheimar
       </h3>
       <ul className={styles.navList}>
