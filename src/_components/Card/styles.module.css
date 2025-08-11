@@ -1,37 +1,42 @@
 .card {
-    width: 700px;
-    margin-bottom: 24px;
-    padding: 24px;
+  width: 700px;
+  margin-bottom: 24px;
+  padding: 24px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
-    background-color: #fff;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
 }
 
 .cardHeader {
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.cardImage {
+  border-radius: 50%;
 }
 
 .weekInfo {
-    font-family: var(--primary-font);
-    font-size: 1.6rem;
-    font-weight: 600;
-    margin: 0;
+  font-family: var(--primary-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 0;
 }
 
 .date_info {
-    font-family: var(--primary-font);
-    font-size: 1.2rem;
-    margin: 0;
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  margin: 0;
 }
 
 .cardPrice {
-    font-family: var(--primary-font);
-    font-weight: 600;
+  font-family: var(--primary-font);
+  font-weight: 600;
 }
