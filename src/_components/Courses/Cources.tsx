@@ -1,5 +1,5 @@
 import styles from './styles.module.css';
-import Card from '../Card/Card';
+import CourseCard from '../CourseCard/CourseCard';
 
 export default function Courses() {
   const cources = [
@@ -8,7 +8,7 @@ export default function Courses() {
       weekNr: 1,
       dateFrom: '23. june',
       dateTo: '28. june',
-      price: 60000,
+      price: 65000,
       link: '/',
       iconAlt: 'A white dragon flying over a forest',
     },
@@ -38,7 +38,7 @@ export default function Courses() {
       <h2 className={styles.subHeading}>Sagan endalausa</h2>
 
       {cources.map((cources, index) => (
-        <Card
+        <CourseCard
           key={index}
           iconUrl={cources.iconUrl}
           weekNr={cources.weekNr}

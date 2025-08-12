@@ -12,7 +12,7 @@ type CardProps = {
   link: string;
 };
 
-export default function Card({
+export default function CourseCardrd({
   iconUrl,
   alt_description,
   price,
