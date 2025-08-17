@@ -2,7 +2,7 @@ import styles from './styles.module.css';
 import CourseCard from '../CourseCard/CourseCard';
 
 export default function Courses() {
-  const cources = [
+  const courses = [
     {
       iconUrl: '/images/nes_icon.jpg',
       weekNr: 1,
@@ -34,10 +34,10 @@ export default function Courses() {
 
   return (
     <section className={styles.courseContainer}>
-      <h1 className={styles.mainHeading}>Námskeið</h1>
+      <h1 className={styles.heading}>Námskeið</h1>
       <h2 className={styles.subHeading}>Sagan endalausa</h2>
 
-      {cources.map((cources, index) => (
+      {courses.map((cources, index) => (
         <CourseCard
           key={index}
           iconUrl={cources.iconUrl}

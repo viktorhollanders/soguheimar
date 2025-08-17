@@ -1,0 +1,43 @@
+.faqContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 88px;
+}
+
+.heading {
+  margin-bottom: 32px;
+}
+
+.questionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  min-width: 365px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid var(--gray-100);
+}
+
+.questionText {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.icon {
+  font-size: 5.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+
+  margin: 0;
+}
+
+.answerText {
+  display: none;
+}
+
+.active {
+  display: block;
+}
